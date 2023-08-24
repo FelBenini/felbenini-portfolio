@@ -6,7 +6,7 @@ import { BiSolidBookContent } from 'react-icons/bi'
 import { FaDisplay } from 'react-icons/fa6'
 import Link from 'next/link'
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+export const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,7 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <header>
+        <header></header>
+        <nav>
           <Link href='/' aria-label='home'>
             <RiHome7Fill size={'2rem'} aria-label='icon of a house' />
           </Link>
@@ -31,7 +32,7 @@ export default function RootLayout({
           <Link href='/projects' aria-label='projects'>
             <FaDisplay aria-label='display icon for projects' size={'1.8rem'} />
           </Link>
-        </header>
+        </nav>
         {children}
       </body>
     </html>

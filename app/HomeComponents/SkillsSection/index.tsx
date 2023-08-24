@@ -9,6 +9,7 @@ import { GrMysql } from 'react-icons/gr'
 import { BsFiletypeSql, BsGithub, BsGit } from 'react-icons/bs'
 import { MdDataObject } from 'react-icons/md'
 import { Miriam_Libre } from 'next/font/google'
+import { montserrat } from '@/app/layout'
 
 const miriamLimbre = Miriam_Libre({weight: '700', subsets: ['latin']})
 
@@ -19,7 +20,7 @@ export default function SkillsSection() {
             <div className={`${styles.div} ${miriamLimbre.className}`}>
                 <Card id='frontend-skills'>
                     <div className={styles.cardContent}>
-                        <h4 style={{color: '#27e5be'}}>Frontend</h4>
+                        <h4 className={montserrat.className} style={{color: '#27e5be'}}>Frontend</h4>
                         <p><FaReact /> React.js</p>
                         <p><SiNextdotjs /> Next.js</p>
                         <p><BiLogoVuejs /> Vue.js</p>
@@ -33,7 +34,7 @@ export default function SkillsSection() {
                 </Card>
                 <Card id='backend-skills'>
                     <div className={styles.cardContent}>
-                        <h4 style={{color: '#4592fb'}}>Backend</h4>
+                        <h4 className={montserrat.className} style={{color: '#4592fb'}}>Backend</h4>
                         <p><IoLogoNodejs /> Node.js</p>
                         <p><SiExpress /> Express.js</p>
                         <p><SiNestjs /> Nest.js</p>
@@ -46,7 +47,7 @@ export default function SkillsSection() {
                 </Card>
                 <Card id='development-skills'>
                     <div className={styles.cardContent}>
-                        <h4 style={{color: '#f8bf53'}}>Development</h4>
+                        <h4 className={montserrat.className} style={{color: '#f8bf53'}}>Development</h4>
                         <p><BsGit /> Git</p>
                         <p><BsGithub /> GitHub</p>
                         <p><SiGithubactions /> GitHub Actions</p>
