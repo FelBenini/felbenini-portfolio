@@ -7,14 +7,14 @@
     & .div {
         display: flex;
         justify-content: center;
-        gap: 0.5rem;
+        gap: 0.8rem;
         align-items: center;
         width: 90%;
         flex-wrap: wrap;
         margin: 0 auto;
     }
     & .cardContent {
-        width: 280px;
+        width: 320px;
         max-width: calc(100% - 12px);
         align-items: center;
         padding: 12px 6px;

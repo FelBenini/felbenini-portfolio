@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google'
 import { RiHome7Fill } from 'react-icons/ri'
 import { BiSolidBookContent } from 'react-icons/bi'
 import { FaDisplay } from 'react-icons/fa6'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const montserrat = Montserrat({ subsets: ['latin'] })
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <header></header>
+        <header>
+          <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo'/>
+        </header>
         <nav>
           <Link href='/' aria-label='home'>
             <RiHome7Fill size={'2rem'} aria-label='icon of a house' />
