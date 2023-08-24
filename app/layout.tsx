@@ -1,6 +1,10 @@
-import './globals.css'
+import './globals.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { RiHome7Fill } from 'react-icons/ri'
+import { BiSolidBookContent } from 'react-icons/bi'
+import { FaDisplay } from 'react-icons/fa6'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +20,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <Link href='/'>
+            <RiHome7Fill size={'2rem'} />
+          </Link>
+          <Link href='/blog'>
+            <BiSolidBookContent size={'2rem'} />
+          </Link>
+          <Link href='/projects'>
+            <FaDisplay size={'1.8rem'} />
+          </Link>
+        </header>
+        {children}
+      </body>
     </html>
   )
 }
