@@ -1,0 +1,38 @@
+.card {
+    background: linear-gradient(-45deg, #2B262D, #3b343d, #7C6E7C);
+    max-width: 95%;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 0.6rem auto;
+    & .insideCard {
+      width: fit-content;
+      height: fit-content;
+      border-radius: 8px;
+      background: #1F1C20;
+      position: relative;
+      &:hover::before {
+        opacity: 1;
+      }
+      &::before {
+        pointer-events: none;
+        background: radial-gradient(
+          800px circle at var(--mouse-x) var(--mouse-y), 
+          rgba(209, 255, 249, 0.06),
+          transparent 40%
+        );
+        border-radius: inherit;
+        content: "";
+        height: 100%;
+        left: 0px;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        transition: opacity 500ms;
+        width: 100%;
+        z-index: 3;
+        cursor: default;
+      }
+    }
+  }
