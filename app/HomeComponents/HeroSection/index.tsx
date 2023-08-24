@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 import { Miriam_Libre } from 'next/font/google'
 import TypeWriterEffect from './TypeWriter'
+import { BsArrowDown } from 'react-icons/bs'
 
 const miriamLimbre = Miriam_Libre({weight: '700', subsets: ['latin']})
 
@@ -16,6 +17,7 @@ export default function HeroSection() {
                     <button className={miriamLimbre.className}>Portfolio</button>
                     <button className={miriamLimbre.className}>Blog</button>
                 </span>
+                <h5><BsArrowDown /> Scroll Down <BsArrowDown /></h5>
             </div>
         </section>
     )

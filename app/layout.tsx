@@ -24,18 +24,10 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <header>
           <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo'/>
+          <span>
+            <p>hey</p>
+          </span>
         </header>
-        <nav>
-          <Link href='/' aria-label='home'>
-            <RiHome7Fill size={'2rem'} aria-label='icon of a house' />
-          </Link>
-          <Link href='/blog' aria-label='blog'>
-            <BiSolidBookContent size={'2rem'} aria-label='icon of a content screen for the blog' />
-          </Link>
-          <Link href='/projects' aria-label='projects'>
-            <FaDisplay aria-label='display icon for projects' size={'1.8rem'} />
-          </Link>
-        </nav>
         {children}
       </body>
     </html>
