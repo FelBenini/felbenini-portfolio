@@ -6,7 +6,12 @@
     }
     & .div {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 0.5rem;
+        align-items: center;
+        width: 90%;
+        flex-wrap: wrap;
+        margin: 0 auto;
     }
     & .cardContent {
         width: 280px;
