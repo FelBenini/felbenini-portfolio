@@ -7,7 +7,7 @@
     radial-gradient(at 97% 1%, #29f7b631 0px, transparent 50%),
     radial-gradient(at 52% 0%, #a232f73e 0px, transparent 50%),
     radial-gradient(at 0% 0%, #f4457742 0px, transparent 50%);
-    & div {
+    & .div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -23,7 +23,7 @@
             opacity: 0;
             animation-delay: 0.8s;
         }
-        & span {
+        & .span {
             display: flex;
             width: 90%;
             height: 52px;

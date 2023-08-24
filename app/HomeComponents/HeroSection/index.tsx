@@ -1,15 +1,18 @@
 import styles from './styles.module.scss'
 import { Miriam_Libre } from 'next/font/google'
+import TypeWriterEffect from './TypeWriter'
 
 const miriamLimbre = Miriam_Libre({weight: '700', subsets: ['latin']})
 
 export default function HeroSection() {
     return (
         <section className={styles.heroSection}>
-            <div>
+            <div className={styles.div}>
                 <AnimatedTitle title={'Felipe Benini'} />
-                <h3 className={miriamLimbre.className}>Web Developer</h3>
-                <span>
+                <h3 className={miriamLimbre.className}>
+                    <TypeWriterEffect />
+                </h3>
+                <span className={styles.span}>
                     <button className={miriamLimbre.className}>Portfolio</button>
                     <button className={miriamLimbre.className}>Blog</button>
                 </span>
