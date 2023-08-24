@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
+import HeroSection from './HomeComponents/HeroSection'
 
 export default function Home() {
   return (
     <main className={styles.Main}>
-
+      <HeroSection />
     </main>
   )
 }

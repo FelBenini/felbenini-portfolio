@@ -1,12 +1,12 @@
 import './globals.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { RiHome7Fill } from 'react-icons/ri'
 import { BiSolidBookContent } from 'react-icons/bi'
 import { FaDisplay } from 'react-icons/fa6'
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,16 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <header>
-          <Link href='/'>
-            <RiHome7Fill size={'2rem'} />
+          <Link href='/' aria-label='home'>
+            <RiHome7Fill size={'2rem'} aria-label='icon of a house' />
           </Link>
-          <Link href='/blog'>
-            <BiSolidBookContent size={'2rem'} />
+          <Link href='/blog' aria-label='blog'>
+            <BiSolidBookContent size={'2rem'} aria-label='icon of a content screen for the blog' />
           </Link>
-          <Link href='/projects'>
-            <FaDisplay size={'1.8rem'} />
+          <Link href='/projects' aria-label='projects'>
+            <FaDisplay aria-label='display icon for projects' size={'1.8rem'} />
           </Link>
         </header>
         {children}

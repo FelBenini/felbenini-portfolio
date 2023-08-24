@@ -21,6 +21,21 @@ header {
   }
 }
 
+html {font-size: 100%;} /*16px*/
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
 body {
   background: linear-gradient(to top left, #12121a, #1a1b24);
   min-height: 100dvh;
