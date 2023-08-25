@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@frank-mayer/react-tag-cloud": "^1.2.1",
     "@mdx-js/loader": "^2.3.0",
     "@next/mdx": "^13.4.12",
     "@types/mdx": "^2.0.5",
