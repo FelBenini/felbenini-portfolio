@@ -19,7 +19,7 @@ export default function HeroSection() {
                     <button className={miriamLimbre.className}>Portfolio</button>
                     <button className={miriamLimbre.className}>Blog</button>
                 </span>
-                <span className={styles.span}>
+                <span className={styles.icons}>
                     <BsGithub size='2.2rem'/>
                     <BiLogoLinkedinSquare size='2.6rem' />
                     <MdEmail size='2.6rem' />

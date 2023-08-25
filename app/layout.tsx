@@ -22,8 +22,11 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <LoadingBar />
         <header>
-          <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo'/>
+          <Link href='/'>
+            <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo'/>
+          </Link>
           <span>
+            <Link href='/blog'>Blog</Link>
             <Link href='/about'>About</Link>
           </span>
         </header>
