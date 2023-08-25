@@ -1,5 +1,6 @@
 import MarkdownParser from '@/components/Markdown';
 import React from 'react'
+import styles from './styles.module.scss'
 
 export const revalidate = 10;
 
@@ -20,8 +21,8 @@ async function fetchData(day: string, month: string, year: string, slug: string)
 export default async function BlogPost({ params }: { params: Params }) {
     const data = await fetchData(params.day, params.month, params.year, params.slug)
   return (
-    <div>
-        <h1>{data.title}</h1>
+    <div className={styles.postSection}>
+        <h1 className={styles.bigTitle}>{data.title}</h1>
         <MarkdownParser source={data.content} />
     </div>
   )
