@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
+import LoadingBar from '@/components/LoadingBar'
 
 export const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
+        <LoadingBar />
         <header>
           <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo'/>
           <span>
