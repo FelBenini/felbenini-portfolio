@@ -21,7 +21,7 @@ function calculateAge(birthDate: Date) {
     const currentDate = new Date();
   
     let years = currentDate.getFullYear() - birthDate.getFullYear();
-    let months = currentDate.getMonth() - birthDate.getMonth();
+    let months = currentDate.getMonth() - birthDate.getMonth() + 1;
     let days = currentDate.getDate() - birthDate.getDate();
     let hours = currentDate.getHours() - birthDate.getHours();
     let minutes = currentDate.getMinutes() - birthDate.getMinutes();
