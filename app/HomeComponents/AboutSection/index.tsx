@@ -7,8 +7,8 @@ const AboutSection = () => {
   return (
     <section className={styles.aboutSection}>
         <h2>About me</h2>
-        <div>
-            <p>Hey there! My name is Felipe, a full-stack/web developer based on Brazil, I am <AgeTime /> old. I have experience building projects and solutions with technologies such as JavaScript, TypeScript, Node.JS, PHP, SQL and etc. I am currently looking for my first professional oportunity on development and the tech industry.</p>
+        <div className={styles.wrapper}>
+            <p className={styles.paragraph}>Hey there! My name is <strong>Felipe</strong>, a full-stack web developer based on Brazil, I am <AgeTime /> old. I have experience building projects and solutions with technologies such as JavaScript, TypeScript, Node.JS, PHP, SQL and etc. I am currently looking for my first professional oportunity on development and the tech industry.</p>
             <CloudTag />
         </div>
     </section>

@@ -10,7 +10,6 @@ const CloudTag = () => {
             })}
         >
             {[
-                "VSCode",
                 "TypeScript",
                 "React",
                 "JavaScript",
@@ -29,7 +28,8 @@ const CloudTag = () => {
                 "NuxtJS",
                 "C#",
                 "Java",
-                "ASP.NET"
+                "ASP.NET",
+                "NestJS"
             ]}
         </TagCloud>
     )

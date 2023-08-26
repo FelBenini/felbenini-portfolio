@@ -4,4 +4,21 @@
     & h2 {
         margin: 2rem;
     }
+    & .wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 968px;
+        margin: 0 auto;
+        align-items: center;
+        max-width: 100%;
+        & .paragraph {
+            width: 420px;
+            text-align: left;
+            font-size: 1.2rem;
+            line-height: 150%;
+            & strong {
+                color: rgb(39, 229, 190);
+            }
+        }
+    }
 }
