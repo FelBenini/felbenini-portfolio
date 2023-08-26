@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <SkillsSection />
       <AboutSection />
+      <SkillsSection />
     </main>
   )
 }
