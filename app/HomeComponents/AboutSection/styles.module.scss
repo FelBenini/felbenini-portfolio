@@ -7,18 +7,26 @@
     & .wrapper {
         display: flex;
         justify-content: space-between;
-        width: 968px;
+        width: 1068px;
         margin: 0 auto;
         align-items: center;
         max-width: 100%;
+        flex-wrap: wrap;
         & .paragraph {
             width: 420px;
             text-align: left;
             font-size: 1.2rem;
             line-height: 150%;
+            margin: 0 auto;
             & strong {
                 color: rgb(39, 229, 190);
             }
         }
+    }
+}
+
+@media (max-width: 800px) {
+    .aboutSection .wrapper .paragraph {
+        text-align: center;
     }
 }

@@ -8,6 +8,7 @@ const CloudTag = () => {
                 radius: Math.min(380, w.innerWidth, w.innerHeight) / 2,
                 maxSpeed: "normal",
             })}
+            style={{margin: '0 auto'}}
         >
             {[
                 "TypeScript",
