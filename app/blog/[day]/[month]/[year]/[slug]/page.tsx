@@ -27,6 +27,9 @@ export default async function BlogPost({ params }: { params: Params }) {
   return (
     <div className={styles.postSection}>
         <h1 className={styles.bigTitle}>{data.title}</h1>
+        <div className={styles.imageWrapper}>
+          <img src={data.backgroundImage} alt={data.title} />
+        </div>
         {data.summary ? <h5 className={styles.summary}>{data.summary}</h5> : <></>}
         <MarkdownParser source={data.content} />
     </div>
