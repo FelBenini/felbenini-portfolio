@@ -5,13 +5,20 @@ import SkillsSection from './HomeComponents/SkillsSection'
 
 export const revalidate = 10;
 
-export default function Home() {
+async function loadPosts() {
+  const data = await fetch(`${process.env.TORTACMS_HOST}/api/posts?category=blog&limit=3`)
+  const res = await data.json();
+  return res.posts;
+}
+
+export default async function Home() {
+  const posts = await loadPosts();
   return (
     <main>
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      <LatestPosts />
+      <LatestPosts posts={posts} />
     </main>
   )
 }
