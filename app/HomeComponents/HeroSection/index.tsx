@@ -4,6 +4,7 @@ import TypeWriterEffect from './TypeWriter'
 import { BsArrowDown, BsTwitter, BsGithub } from 'react-icons/bs'
 import { BiLogoLinkedinSquare } from 'react-icons/bi'
 import { MdEmail } from 'react-icons/md'
+import Link from 'next/link'
 
 const miriamLimbre = Miriam_Libre({weight: '700', subsets: ['latin']})
 
@@ -21,9 +22,15 @@ export default function HeroSection() {
                     <button className={miriamLimbre.className}>Blog</button>
                 </span>
                 <span className={styles.icons}>
-                    <BsGithub size='2.2rem'/>
-                    <BiLogoLinkedinSquare size='2.6rem' />
-                    <MdEmail size='2.6rem' />
+                    <Link href='https://github.com/FelBenini' target='blank'>
+                        <BsGithub size='2.2rem'/>
+                    </Link>
+                    <Link href='https://www.linkedin.com/in/felipe-benini-88a23b24a/' target='blank'>
+                        <BiLogoLinkedinSquare size='2.6rem' />
+                    </Link>
+                    <Link href='mailto:felipe.benini.02@gmail.com' target='blank'>
+                        <MdEmail size='2.6rem' />
+                    </Link>
                 </span>
                 <h5><BsArrowDown /> Scroll Down <BsArrowDown /></h5>
             </div>

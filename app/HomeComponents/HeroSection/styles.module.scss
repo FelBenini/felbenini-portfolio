@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;
     background-image:
-    radial-gradient(at 97% 1%, #29f7b631 0px, transparent 50%),
-    radial-gradient(at 52% 0%, #a232f73e 0px, transparent 50%),
-    radial-gradient(at 0% 0%, #f4457742 0px, transparent 50%);
+        radial-gradient(at 97% 1%, #29f7b631 0px, transparent 50%),
+        radial-gradient(at 52% 0%, #a232f73e 0px, transparent 50%),
+        radial-gradient(at 0% 0%, #f4457742 0px, transparent 50%);
+
     & h5 {
         font-weight: 400;
         font-size: 1.2rem;
@@ -16,11 +17,13 @@
         opacity: 0;
         animation: opacity 0.4s ease forwards;
         animation-delay: 2s;
+
         & svg {
             animation: arrowAnimation 1.2s ease infinite;
             margin: 0.5rem;
         }
     }
+
     & .div {
         display: flex;
         flex-direction: column;
@@ -29,6 +32,7 @@
         height: 320px;
         width: 420px;
         max-width: 100vw;
+
         & .icons {
             animation: opacity 0.4s ease forwards;
             opacity: 0;
@@ -37,7 +41,17 @@
             justify-content: space-around;
             align-items: center;
             width: 80%;
+
+            & a {
+                transition: all ease 350ms;
+                filter: saturate(1);
+
+                &:hover {
+                    filter: saturate(20);
+                }
+            }
         }
+
         & h3 {
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 1px;
@@ -46,6 +60,7 @@
             opacity: 0;
             animation-delay: 0.8s;
         }
+
         & .span {
             display: flex;
             width: 90%;
@@ -53,6 +68,7 @@
             font-size: 20px;
             justify-content: space-around;
             align-items: center;
+
             & button {
                 height: 100%;
                 width: calc(50% - 2px);
@@ -62,14 +78,17 @@
                 animation: opacity 0.4s ease forwards;
                 opacity: 0;
                 animation-delay: 1.1s;
+
                 &:hover {
                     filter: brightness(1.4);
                 }
+
                 &:nth-child(1) {
                     border-radius: 6px 2px 2px 6px;
                     background: linear-gradient(180deg, #36DDC3 0%, #1D9F91 100%);
                     cursor: pointer;
                 }
+
                 &:nth-child(2) {
                     border-radius: 2px 6px 6px 2px;
                     background: linear-gradient(180deg, #FF487E 0%, #C83663 100%);
@@ -78,13 +97,15 @@
             }
         }
     }
+
     & .bigTitle {
         font-size: 3.815rem;
         display: flex;
+
         & .animated {
             width: fit-content;
             font-size: 3.815rem;
-            animation: slidein 300ms cubic-bezier(.76,.07,.41,1.35) forwards;
+            animation: slidein 300ms cubic-bezier(.76, .07, .41, 1.35) forwards;
             transform: scaleY(0%);
             animation-delay: calc(0.05s * var(--index));
             height: fit-content;
@@ -94,18 +115,19 @@
 
 @keyframes slidein {
     from {
-      transform: scaleY(0%);
+        transform: scaleY(0%);
     }
-  
+
     to {
-      transform: scaleY(100%);
+        transform: scaleY(100%);
     }
-  }
+}
 
 @keyframes opacity {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -115,9 +137,11 @@
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(4px);
     }
+
     0% {
         transform: translateY(0px);
     }
