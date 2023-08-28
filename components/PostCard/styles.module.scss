@@ -1,5 +1,5 @@
 .card {
-    max-width: 98%;
+    max-width: calc(98% - 24px);
     width: 410px;
     aspect-ratio: 16/12;
     background-color: #1D2027;
