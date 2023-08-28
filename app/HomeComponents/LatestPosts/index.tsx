@@ -2,7 +2,7 @@ import PostCard, { Post } from '@/components/PostCard';
 import styles from './styles.module.scss'
 
 async function loadData() {
-    const data = await fetch(`${process.env.TORTACMS_HOST}/api/posts?limit=3`)
+    const data = await fetch(`${process.env.TORTACMS_HOST}/api/posts?category=blog&limit=3`)
     const res = await data.json();
     return res.posts;
 }

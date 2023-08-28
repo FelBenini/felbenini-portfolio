@@ -15,7 +15,7 @@ const PostCard = ({post}: {post: Post}) => {
   return (
     <Link href={`/blog/${post.postUrl}`} className={styles.card}>
         <div className={styles.image}>
-            <img src={post.backgroundImage} />
+            <img src={post.backgroundImage} alt={post.title} loading='lazy' />
         </div>
         <h4>{post.title}</h4>
         <p>{post.summary}</p>
