@@ -1,5 +1,5 @@
 import PostCard, { Post } from '@/components/PostCard';
-import React from 'react'
+import styles from './styles.module.scss'
 
 async function loadData() {
     const data = await fetch(`${process.env.TORTACMS_HOST}/api/posts?limit=3`)
@@ -10,7 +10,7 @@ async function loadData() {
 const LatestPosts = async () => {
     const data = await loadData();
   return (
-    <section>
+    <section className={styles.postSection}>
         {data.map((post: Post, index: React.Key) => {
             return <PostCard post={post} key={index} />
         })}
