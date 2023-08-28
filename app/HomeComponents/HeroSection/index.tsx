@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 import { Miriam_Libre } from 'next/font/google'
 import TypeWriterEffect from './TypeWriter'
-import { BsArrowDown, BsTwitter, BsGithub } from 'react-icons/bs'
+import { BsArrowDown, BsGithub } from 'react-icons/bs'
 import { BiLogoLinkedinSquare } from 'react-icons/bi'
 import { MdEmail } from 'react-icons/md'
 import Link from 'next/link'
