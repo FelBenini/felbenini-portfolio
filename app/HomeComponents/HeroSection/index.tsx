@@ -11,6 +11,7 @@ export default function HeroSection() {
     return (
         <section className={styles.heroSection}>
             <div className={styles.div}>
+                <p className={miriamLimbre.className}>Hey there, I am</p>
                 <AnimatedTitle title={'Felipe Benini'} />
                 <h3 className={miriamLimbre.className}>
                     <TypeWriterEffect />
