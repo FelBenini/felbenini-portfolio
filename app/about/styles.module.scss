@@ -1,8 +1,24 @@
 .aboutPage {
     padding-top: 80px;
     width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
     & h1 {
         text-align: center;
+        margin-bottom: 1rem;
+    }
+    & p {
+        font-size: 1.2rem;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        & strong {
+            color: rgb(39, 229, 190);
+        }
+    }
+    & .tagCloud {
+        margin: 0 auto;
+        width: fit-content;
     }
 }
