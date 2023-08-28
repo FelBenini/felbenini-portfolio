@@ -2,7 +2,7 @@
     padding-top: 64px;
     line-height: 1.75;
     width: 780px;
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
 
     & .summary {
@@ -67,5 +67,15 @@
 
     h5 {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .postSection .bigTitle {
+        font-size: 2.488rem;
+    }
+    .postSection p {
+        font-size: 1rem;
+        line-height: 1.4;
     }
 }
