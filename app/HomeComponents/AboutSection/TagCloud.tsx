@@ -31,7 +31,8 @@ const CloudTag = () => {
                 "Java",
                 "ASP.NET",
                 "NestJS",
-                "PostgreSQL"
+                "PostgreSQL",
+                "Docker"
             ]}
         </TagCloud>
     )
