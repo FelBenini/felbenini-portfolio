@@ -1,9 +1,21 @@
 .postSection {
-    display: flex;
-    justify-content: center;
-    gap: 12;
-    max-width: 100%;
-    flex-wrap: wrap;
-    width: 1080px;
-    margin: 1.5rem auto;
+    padding-top: 3rem;
+    padding-top: 3rem;
+    & h2 {
+        text-align: center;
+        margin: 2rem;
+    }
+    & .posts {
+        display: flex;
+        justify-content: center;
+        gap: 0.6rem;
+        max-width: 100%;
+        flex-wrap: wrap;
+        width: 1330px;
+        margin: 1.5rem auto;
+    }
+    & .buttonBlog {
+        margin: 0 auto;
+    }
+    
 }

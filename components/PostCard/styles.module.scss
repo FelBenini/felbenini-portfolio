@@ -7,7 +7,7 @@
     display: flex;
     border-radius: 8px;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     text-decoration: none;
     transition: all ease 0.2s;
     &:hover {
@@ -20,7 +20,7 @@
         width: 100%;
         aspect-ratio: 16/8;
         object-fit: cover;
-        justify-self: flex-start;
+        justify-self: start;
         & img {
             width: 100%;
             aspect-ratio: 16/8;
