@@ -5,6 +5,15 @@
     max-width: 95%;
     margin: 0 auto;
 
+    & pre {
+        overflow: scroll;
+        padding: 6px;
+        margin: 0 1rem;
+        background-color: #121219;
+        margin-bottom: 1.5rem;
+        border-radius: 6px;
+    }
+
     & .summary {
         font-size: 1rem;
         margin-top: 1rem;

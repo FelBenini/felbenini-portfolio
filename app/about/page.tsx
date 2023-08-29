@@ -18,8 +18,9 @@ const About = () => {
         <img src="https://ghchart.rshah.org/FelBenini" alt="Felbenini's Github chart" style={{filter: 'invert(95%) hue-rotate(220deg)', margin: '2rem auto', display: 'block', width: '95%'}} />
         <h3>Projects That I&apos;ve Built</h3>
         <section className={styles.projects}>
-          <ProjectCard name='tortaCMS' stack={['Node.js', 'TypeScript', 'React', 'Next.js', 'Full Stack', 'PrismaORM', 'SASS']} github='https://github.com/FelBenini/torta-cms' demo='https://torta-cms.vercel.app' description='tortaCMS is an open-source content management system designed to give developers flexible tools with a powerful content management solution' img='/projectsImages/torta-cms.png' />
-          <ProjectCard name='Crypto Tracker' stack={['Node.js', 'JavaScript', 'React', 'SASS', 'Material UI', 'Coingecko API']} github='https://github.com/FelBenini/crypto_tracker' demo='https://crypto-tracker-fb.vercel.app/' description='A simple crypto currency tracker built with React, React-router, Material-UI and Axios. Displays the data of hundreds of crypto currencies' img='/projectsImages/crypto-tracker.png' />
+          <ProjectCard name='tortaCMS' stack={['Node.js', 'TypeScript', 'React', 'Next.js', 'Full Stack', 'PrismaORM', 'SASS']} github='https://github.com/FelBenini/torta-cms' demo='https://torta-cms.vercel.app' description='tortaCMS is an open-source project designed to give developers flexible tools with a powerful content management solution' img='/projectsImages/torta-cms.png' />
+          <ProjectCard name='cryptoTracker' stack={['Node.js', 'JavaScript', 'React', 'SASS', 'Material UI', 'Coingecko API']} github='https://github.com/FelBenini/crypto_tracker' demo='https://crypto-tracker-fb.vercel.app/' description='A crypto currency tracker that displays data of hundred of cryptos built with React, React-router, Material-UI and Coingecko&apos;s API' img='/projectsImages/crypto-tracker.png' />
+          <ProjectCard name='Todo App' demo='https://todo-app-felbenini.vercel.app/' github='https://github.com/FelBenini/todo-app' stack={['React', 'SASS', 'TypeScript', 'React Cookies', 'Material UI']} description='A task management system made with React totally private with all the data being stored on the cookies and local storage' img='/projectsImages/todo-app.png' />
         </section>
       </div>
     </main>
