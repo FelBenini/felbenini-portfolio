@@ -7,7 +7,7 @@ const About = () => {
     <main className={styles.aboutPage}>
       <h1>About Me</h1>
       <div>
-        <p>Hey there! My name is <strong>Felipe</strong>, a full-stack web developer based on <strong>Brazil</strong>, and welcome to my little corner of the web! I am <em><AgeTime /> old</em>. I have experience building projects and <strong>full-stack</strong> solutions with technologies such as JavaScript, TypeScript, Node.JS, PHP, SQL and much more! I am currently looking for my first professional oportunity on development and the tech industry. Whether it&apos;s transforming wireframes into intuitive user interfaces or architecting robust backend systems, I take pride in every line of code I write. </p>
+        <p>Hey there! My name is <strong>Felipe</strong>, a full-stack web developer based on <strong>Brazil</strong>, and welcome to my little corner of the web! I am <em><AgeTime /> old</em>. I have experience building projects and <strong>full-stack</strong> solutions with technologies such as JavaScript, TypeScript, Node.JS, PHP, SQL and much more! I am currently looking for my <em>first professional oportunity on web development</em> and the tech industry. Whether it&apos;s transforming wireframes into intuitive user interfaces or architecting robust backend systems, I take pride in every line of code I write. </p>
         <h2>Full Stack Web Dev</h2>
         <div className={styles.tagCloud}>
           <CloudTag />
