@@ -1,4 +1,5 @@
-import PostCard, { Post } from '@/components/PostCard';
+import { type Post } from '@/components/PostCard';
+import PostComponent from '@/components/Post';
 import React from 'react'
 import styles from './styles.module.scss'
 
@@ -14,7 +15,7 @@ const BlogPage = async ({ searchParams }: { searchParams: { page: string | undef
   return (
     <main className={styles.blogPage}>
       {data.posts.map((p: Post, index: React.Key) => {
-        return <PostCard post={p} key={index} />
+        return <PostComponent post={p} key={index} />
       })}
     </main>
   )
