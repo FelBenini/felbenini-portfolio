@@ -9,8 +9,8 @@ export type Post = {
 }
 
 const PostCard = ({post}: {post: Post}) => {
-    if (post.title.length > 51) {
-        post.title = post.title.slice(0, 51) + '...'
+    if (post.title.length > 45) {
+        post.title = post.title.slice(0, 45) + '...'
     }
     if (post.summary.length > 125) {
         post.summary = post.summary.slice(0, 125) + '...';
