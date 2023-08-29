@@ -1,0 +1,10 @@
+.ageTime:after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    width: 4px;
+    height: 1px;
+    color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+}
