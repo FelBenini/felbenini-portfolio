@@ -1,0 +1,45 @@
+.projectCard {
+  max-width: 95%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: #1e1e26;
+  align-items: center;
+  width: 270px;
+  & p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+  & span {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin-top: 0.8rem;
+    gap: 4px;
+    & a {
+      width: fit-content;
+      flex-shrink: 0;
+      width: calc(50% - 4px);
+      font-size: 1rem;
+      padding: 0.6rem 0.3rem;
+      background-color: #E7F2FB;
+      color: #12121a;
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      & svg {
+        margin-right: 2px;
+      }
+      &:nth-child(2) {
+        background-color: #27e5be;
+      }
+    }
+  }
+}

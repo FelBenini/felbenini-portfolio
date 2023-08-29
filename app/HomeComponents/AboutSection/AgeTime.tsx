@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import styles from './agetime.module.scss'
 
 const birthday = new Date(2002, 10, 18, 8, 33, 40)
@@ -54,7 +54,11 @@ function calculateAge(birthDate: Date) {
       years--;
     }
   
-    return <span className={styles.ageTime}>{`${years} years, ${months} months, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds old`}</span>;
+    return (
+      <Suspense>
+        <span className={styles.ageTime}>{`${years} years, ${months} months, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds old`}</span>
+      </Suspense>
+    );
   }
 
 export default AgeTime

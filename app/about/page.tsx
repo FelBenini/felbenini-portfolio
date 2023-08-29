@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 import AgeTime from '../HomeComponents/AboutSection/AgeTime'
 import CloudTag from '../HomeComponents/AboutSection/TagCloud'
+import ProjectCard from '@/components/ProjectCard'
 
 const About = () => {
   return (
@@ -14,8 +15,9 @@ const About = () => {
         </div>
         <p>My knowledge on web development goes from building beautiful and intuitive user interfaces on the front-end to complex and scalable services on the back-end. Some of the technologies that I&apos;ve worked with are JavaScript, TypeScript, Node.js, React, Next.js, Vue, Nuxt.js, SQL, NoSQL, Java, C#, ASP.NET, Express.js, Nest.js and much more. Check out below some of my contributions on GitHub in the latest days as well as some of my programming projects!</p>
         <h3>GitHub Contributions</h3>
-        <img src="https://ghchart.rshah.org/FelBenini" alt="2016rshah's Github chart" style={{filter: 'invert(95%) hue-rotate(220deg)', margin: '2rem auto', display: 'block', width: '95%'}} />
+        <img src="https://ghchart.rshah.org/FelBenini" alt="Felbenini's Github chart" style={{filter: 'invert(95%) hue-rotate(220deg)', margin: '2rem auto', display: 'block', width: '95%'}} />
         <h3>Projects That I&apos;ve Built</h3>
+        <ProjectCard name='tortaCMS' stack={['Node.js', 'TypeScript']} github='https://github.com/FelBenini/torta-cms' demo='https://torta-cms.vercel.app' description='tortaCMS is an open-source content management system designed to give developers flexible tools with a powerful content management solution' />
       </div>
     </main>
   )
