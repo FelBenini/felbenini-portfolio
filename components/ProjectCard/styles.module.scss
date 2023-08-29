@@ -1,15 +1,21 @@
 .projectCard {
-  max-width: 95%;
+  max-width: calc(98% - 24px);
+  border: 1px solid #2b2b37;
   text-align: center;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  padding: 6px;
+  padding: 6px 12px;
   border-radius: 6px;
   padding-bottom: 12px;
   background-color: #1e1e26;
   align-items: center;
   width: 270px;
+  box-shadow: rgba(11, 12, 12, 0.2) 0px 8px 24px;
+  transition: all ease 200ms;
+  &:hover {
+    background-color: #272732;
+  }
   & h5 {
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
@@ -53,11 +59,18 @@
       text-decoration: none;
       border: none;
       border-radius: 4px;
+      transition: all ease 200ms;
+      &:hover {
+        background-color: #d1dbe2;
+      }
       & svg {
         margin-right: 2px;
       }
       &:nth-child(2) {
         background-color: #27e5be;
+        &:hover {
+          background-color: #1fcfac;
+        }
       }
     }
   }
