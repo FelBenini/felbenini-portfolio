@@ -17,7 +17,7 @@ const About = () => {
         <h3>GitHub Contributions</h3>
         <img src="https://ghchart.rshah.org/FelBenini" alt="Felbenini's Github chart" style={{filter: 'invert(95%) hue-rotate(220deg)', margin: '2rem auto', display: 'block', width: '95%'}} />
         <h3>Projects That I&apos;ve Built</h3>
-        <ProjectCard name='tortaCMS' stack={['Node.js', 'TypeScript']} github='https://github.com/FelBenini/torta-cms' demo='https://torta-cms.vercel.app' description='tortaCMS is an open-source content management system designed to give developers flexible tools with a powerful content management solution' />
+        <ProjectCard name='tortaCMS' stack={['Node.js', 'TypeScript', 'React', 'Next.js', 'Full Stack', 'PrismaORM', 'SASS']} github='https://github.com/FelBenini/torta-cms' demo='https://torta-cms.vercel.app' description='tortaCMS is an open-source content management system designed to give developers flexible tools with a powerful content management solution' img='/projectsImages/torta-cms.png' />
       </div>
     </main>
   )

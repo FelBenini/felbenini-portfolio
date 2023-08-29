@@ -1,13 +1,32 @@
 .projectCard {
   max-width: 95%;
+  text-align: center;
   height: fit-content;
   display: flex;
   flex-direction: column;
   padding: 6px;
   border-radius: 6px;
+  padding-bottom: 12px;
   background-color: #1e1e26;
   align-items: center;
   width: 270px;
+  & h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  & h6 {
+    font-weight: 600;
+  }
+  & .image {
+    width: 100%;
+    aspect-ratio: 16/8;
+    position: relative;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    & img {
+      border-radius: 4px;
+    }
+  }
   & p {
     font-size: 0.9rem;
     margin: 0.5rem 0;
