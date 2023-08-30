@@ -70,11 +70,16 @@ header {
     background-color: transparent;
     border: none;
     color: #c7d3db;
+    transition: all ease 100ms;
+    &:active {
+      transform: scale(1.1);
+    }
   }
 
   & span {
     display: flex;
     align-items: center;
+
     & button {
       margin-left: 1.8rem;
       background-color: transparent;
@@ -95,7 +100,7 @@ header {
       background-color: transparent;
       transition-duration: 0.3s;
       cursor: pointer;
-  
+
       &:before {
         content: "";
         border-radius: 8px;
@@ -117,16 +122,17 @@ header {
         -webkit-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
       }
-  
+
       &:hover {
         color: #13141b;
       }
-  
+
       &:hover:before {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
       }
     }
+
     & a {
       font-size: 1.3rem;
       font-weight: 500;
@@ -145,6 +151,7 @@ header {
   header span {
     display: none;
   }
+
   header .buttonMenu {
     display: flex;
     justify-content: center;
@@ -187,10 +194,11 @@ header {
 
 /*  Yellow */
 /* INFO:  	Function parameters, Regex character sets, Terminal Yellow */
-.hljs-built_in, 
+.hljs-built_in,
 .hljs-attribute {
   color: #e0af68;
 }
+
 /* cyan */
 /* INFO: Language support functions, CSS HTML elements */
 .hljs-selector-tag {
@@ -200,16 +208,20 @@ header {
 /* light blue */
 /* INFO: Object properties, Regex quantifiers and flags, Markdown headings, Terminal Cyan, Markdown code, Import/export keywords */
 .hljs-keyword,
-  .hljs-title.function_,
+.hljs-title.function_,
 .hljs-title,
 .hljs-title.class_,
 .hljs-title.class_.inherited__,
 .hljs-subst,
-.hljs-property {color: #7dcfff;}
+.hljs-property {
+  color: #7dcfff;
+}
 
 /*Green*/
 /* INFO: Object literal keys, Markdown links, Terminal Green */
-.hljs-selector-tag { color: #73daca;}
+.hljs-selector-tag {
+  color: #73daca;
+}
 
 
 /*Green(er) */

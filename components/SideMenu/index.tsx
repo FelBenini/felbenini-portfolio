@@ -31,6 +31,7 @@ function SideMenu({openState, setOpenState}: {openState: boolean, setOpenState: 
         <span>
           <Image src='/logo.svg' alt='FB' width={42} height={42} />
         </span>
+        <Link href='/about'>About</Link>
         <Link href='/blog'>Blog</Link>
         <Link href='/portfolio'>Portfolio</Link>
       </div>

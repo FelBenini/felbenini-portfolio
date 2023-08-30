@@ -3,11 +3,12 @@
   padding: 12px;
   background-color: #182428;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   & a {
     font-size: 1.8rem;
     text-decoration: none;
-    margin-top: 1.2rem;
+    margin-top: 6dvh;
     display: block;
     text-align: center;
     font-weight: 600;
