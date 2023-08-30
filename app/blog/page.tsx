@@ -3,6 +3,11 @@ import PostComponent from '@/components/Post';
 import React from 'react'
 import styles from './styles.module.scss'
 
+export const metadata = {
+  title: 'Blog - Felipe Benini Web Developer',
+  description: 'Full-Stack Web Developer based on Brazil with proficiency on many technologies',
+}
+
 async function fetchPosts(page: string | undefined = '1') {
   const data = await fetch(`${process.env.TORTACMS_HOST}/api/posts/?page=${page}`);
   const res = await data.json()

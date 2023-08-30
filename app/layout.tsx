@@ -1,16 +1,12 @@
+'use client';
 import './globals.scss'
-import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
 import LoadingBar from '@/components/LoadingBar'
+import SideMenu from '@/components/SideMenu'
 
-export const montserrat = Montserrat({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Felipe Benini Web Developer',
-  description: 'Full-Stack Web Developer based on Brazil with proficiency on many technologies',
-}
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -21,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <LoadingBar />
+        <SideMenu />
         <header>
           <Link href='/'>
             <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo'/>

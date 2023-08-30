@@ -3,6 +3,11 @@ import AgeTime from '../HomeComponents/AboutSection/AgeTime'
 import CloudTag from '../HomeComponents/AboutSection/TagCloud'
 import ProjectCard from '@/components/ProjectCard'
 
+export const metadata = {
+  title: 'Felipe Benini Web Developer',
+  description: 'Full-Stack Web Developer based on Brazil with proficiency on many technologies',
+}
+
 const About = () => {
   return (
     <main className={styles.aboutPage}>

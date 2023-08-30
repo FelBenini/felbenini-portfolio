@@ -9,8 +9,9 @@ import { GrMysql } from 'react-icons/gr'
 import { BsFiletypeSql, BsGithub, BsGit } from 'react-icons/bs'
 import { MdDataObject } from 'react-icons/md'
 import { Miriam_Libre } from 'next/font/google'
-import { montserrat } from '@/app/layout'
+import { Montserrat } from 'next/font/google'
 
+const montserrat = Montserrat({ subsets: ['latin'] })
 const miriamLimbre = Miriam_Libre({weight: '700', subsets: ['latin']})
 
 export default function SkillsSection() {
