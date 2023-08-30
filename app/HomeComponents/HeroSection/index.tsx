@@ -22,13 +22,13 @@ export default function HeroSection() {
                     <button className={miriamLimbre.className}>Blog</button>
                 </span>
                 <span className={styles.icons}>
-                    <Link href='https://github.com/FelBenini' target='blank'>
+                    <Link aria-label='GitHub' href='https://github.com/FelBenini' target='blank'>
                         <BsGithub size='2.2rem'/>
                     </Link>
-                    <Link href='https://www.linkedin.com/in/felipe-benini-88a23b24a/' target='blank'>
+                    <Link aria-label='LinkedIn' href='https://www.linkedin.com/in/felipe-benini-88a23b24a/' target='blank'>
                         <BiLogoLinkedinSquare size='2.6rem' />
                     </Link>
-                    <Link href='mailto:felipe.benini.02@gmail.com' target='blank'>
+                    <Link aria-label='e-mail' href='mailto:felipe.benini.02@gmail.com' target='blank'>
                         <MdEmail size='2.6rem' />
                     </Link>
                 </span>
