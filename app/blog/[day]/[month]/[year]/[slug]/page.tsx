@@ -3,6 +3,7 @@ import React from 'react'
 import { type Metadata } from 'next';
 import styles from './styles.module.scss'
 import { notFound } from 'next/navigation'
+import { PostDate } from '@/components/Post';
 
 export const revalidate = 10;
 
@@ -36,6 +37,7 @@ export default async function BlogPost({ params }: { params: Params }) {
   return (
     <div className={styles.postSection}>
         <h1 className={styles.bigTitle}>{data.title}</h1>
+        <PostDate date={new Date(data.publishedAt)} />
         <div className={styles.imageWrapper}>
           <img src={data.backgroundImage} alt={data.title} loading='lazy' />
         </div>

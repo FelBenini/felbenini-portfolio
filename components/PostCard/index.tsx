@@ -6,6 +6,7 @@ export type Post = {
     summary: string;
     backgroundImage: string | undefined;
     postUrl: string;
+    publishedAt: Date;
 }
 
 const PostCard = ({post}: {post: Post}) => {

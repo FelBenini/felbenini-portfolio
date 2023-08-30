@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Post } from '../PostCard'
+import { IoMdStopwatch } from 'react-icons/io'
 import styles from './styles.module.scss'
 
 const PostComponent = ({ post }: { post: Post }) => {
@@ -13,6 +14,14 @@ const PostComponent = ({ post }: { post: Post }) => {
         <p>{post.summary}</p>
       </div>
     </Link>
+  )
+}
+
+export const PostDate = ({date}: {date: Date}) => {
+  return (
+    <h5 style={{marginTop: '1rem'}}>
+      <IoMdStopwatch aria-label='published at' size='1.3rem' style={{marginBottom: '-3px'}} /> {date.getDate()}/{date.getMonth()}/{date.getFullYear()} - {date.getHours()}:{date.getMinutes()}
+    </h5>
   )
 }
 
