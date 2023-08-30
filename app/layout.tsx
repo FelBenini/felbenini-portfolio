@@ -6,7 +6,7 @@ import Image from 'next/image'
 import LoadingBar from '@/components/LoadingBar'
 import SideMenu from '@/components/SideMenu'
 import { useState } from 'react';
-import { PiHamburgerBold } from 'react-icons/pi'
+import { HiMenu } from 'react-icons/hi'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -39,10 +39,10 @@ export default function RootLayout({
             <button>Download CV</button>
           </span>
           <button onClick={handleMenuClick} className='buttonMenu'>
-            <PiHamburgerBold size='3rem' />
+            <HiMenu size='3rem' />
           </button>
         </header>
-        {children}
+          {children}
       </body>
     </html>
   )

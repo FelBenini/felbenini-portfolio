@@ -26,7 +26,7 @@ function SideMenu({openState, setOpenState}: {openState: boolean, setOpenState: 
     mutationObserver.observe(document, { childList: true, subtree: true });
   })
   return (
-    <Menu isOpen={openState} width='60%'>
+    <Menu right isOpen={openState} width='60%'>
       <div className={styles.sideMenu}>
         <span>
           <Image src='/logo.svg' alt='FB' width={42} height={42} />
