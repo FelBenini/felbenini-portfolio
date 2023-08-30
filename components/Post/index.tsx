@@ -11,6 +11,9 @@ const PostComponent = ({ post }: { post: Post }) => {
       </div>
       <div className={styles.text}>
         <h4>{post.title}</h4>
+        <span>
+          <h5>Published by {post.postedBy}</h5><PostDate date={new Date(post.publishedAt)} />
+        </span>
         <p>{post.summary}</p>
       </div>
     </Link>

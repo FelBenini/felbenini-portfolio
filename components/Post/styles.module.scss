@@ -9,6 +9,20 @@
   background-color: #30313d40;
   padding: 8px 6px;
   border-radius: 6px;
+  & span {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem;
+  }
+  & span, & span h5 {
+    font-size: 1rem;
+    display: flex;
+    width: 60%;
+    font-weight: 600;
+    opacity: 0.94;
+    margin-top: 0.3rem !important;
+  }
   & .text {
     width: 73%;
     height: 95%;
