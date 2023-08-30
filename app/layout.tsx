@@ -5,6 +5,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import LoadingBar from '@/components/LoadingBar'
 import SideMenu from '@/components/SideMenu'
+import { useState } from 'react';
+import { PiHamburgerBold } from 'react-icons/pi'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -13,11 +15,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [openState, setOpenState] = useState(false);
+
+  const handleMenuClick = () => {
+    if (openState === false) {
+      setOpenState(true)
+    } else {
+      setOpenState(false)
+    }
+  }
   return (
     <html lang="en">
       <body className={montserrat.className}>
         <LoadingBar />
-        <SideMenu />
+        <SideMenu openState={openState} setOpenState={setOpenState} />
         <header>
           <Link href='/'>
             <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo'/>
@@ -27,6 +38,9 @@ export default function RootLayout({
             <Link href='/about'>About</Link>
             <button>Download CV</button>
           </span>
+          <button onClick={handleMenuClick} className='buttonMenu'>
+            <PiHamburgerBold size='3rem' />
+          </button>
         </header>
         {children}
       </body>

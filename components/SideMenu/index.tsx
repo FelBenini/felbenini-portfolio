@@ -1,13 +1,16 @@
 'use client';
 import Link from 'next/link';
 import { slide as Menu } from 'react-burger-menu'
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
+import styles from './styles.module.scss'
 
-function SideMenu() {
-  const [openState, setOpenState] = useState(true);
+function SideMenu({openState, setOpenState}: {openState: boolean, setOpenState: Dispatch<SetStateAction<boolean>>}) {
   return (
-    <Menu right isOpen={openState}>
-      <Link href='/blog'>Blog</Link>
+    <Menu isOpen={openState}>
+      <div className={styles.sideMenu}>
+        <Link href='/blog'>Blog</Link>
+        <Link href='/blog'>Portfolio</Link>
+      </div>
     </Menu>
   )
 }
