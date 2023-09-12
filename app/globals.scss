@@ -53,6 +53,14 @@ a {
   margin: 0px;
 }
 
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
 header {
   position: fixed;
   width: calc(100% - 32px);
@@ -71,6 +79,7 @@ header {
     border: none;
     color: #c7d3db;
     transition: all ease 100ms;
+
     &:active {
       transform: scale(1.1);
     }
@@ -83,13 +92,7 @@ header {
     & button {
       margin-left: 1.8rem;
       background-color: transparent;
-      paddi.bm-burger-button {
-        position: fixed;
-        width: 36px;
-        height: 30px;
-        left: 36px;
-        top: 36px;
-      }ng: 0.5rem;
+      padding: 0.5rem 0.8rem;
       border-radius: 8px;
       color: #27e5be;
       border: 2px solid #27e5be;
