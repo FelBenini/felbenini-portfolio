@@ -4,6 +4,9 @@ import { IoMdStopwatch } from 'react-icons/io'
 import styles from './styles.module.scss'
 
 const PostComponent = ({ post }: { post: Post }) => {
+  if (post.summary.length > 150) {
+    post.summary = post.summary.slice(0, 185) + '...';
+  }
   return (
     <Link href={`/blog/${post.postUrl}`} className={styles.post}>
       <div className={styles.image}>

@@ -4,23 +4,24 @@ import { type Metadata } from 'next';
 import styles from './styles.module.scss'
 import { notFound } from 'next/navigation'
 import { PostDate } from '@/components/Post';
+import AnimationWrapper from '@/components/AnimationWrapper';
 
 export const revalidate = 10;
 
 type Params = {
-    day: string;
-    month: string;
-    year: string;
-    slug: string;
+  day: string;
+  month: string;
+  year: string;
+  slug: string;
 }
 
 async function fetchData(day: string, month: string, year: string, slug: string) {
-    const data = await fetch(`${process.env.TORTACMS_HOST}/api/post/${day}/${month}/${year}/${slug}`);
-    if (data.status !== 200) {
-      return null
-    }
-    const res = await data.json();
-    return res;
+  const data = await fetch(`${process.env.TORTACMS_HOST}/api/post/${day}/${month}/${year}/${slug}`);
+  if (data.status !== 200) {
+    return null
+  }
+  const res = await data.json();
+  return res;
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
@@ -32,10 +33,11 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 }
 
 export default async function BlogPost({ params }: { params: Params }) {
-    const data = await fetchData(params.day, params.month, params.year, params.slug)
-    if (!data) return notFound();
+  const data = await fetchData(params.day, params.month, params.year, params.slug)
+  if (!data) return notFound();
   return (
-    <div className={styles.postSection}>
+    <AnimationWrapper>
+      <div className={styles.postSection}>
         <h1 className={styles.bigTitle}>{data.title}</h1>
         <PostDate date={new Date(data.publishedAt)} />
         <div className={styles.imageWrapper}>
@@ -43,6 +45,7 @@ export default async function BlogPost({ params }: { params: Params }) {
         </div>
         {data.summary ? <h5 className={styles.summary}>{data.summary}</h5> : <></>}
         <MarkdownParser source={data.content} />
-    </div>
+      </div>
+    </AnimationWrapper>
   )
 }

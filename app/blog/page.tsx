@@ -2,6 +2,7 @@ import { type Post } from '@/components/PostCard';
 import PostComponent from '@/components/Post';
 import React from 'react'
 import styles from './styles.module.scss'
+import AnimationWrapper from '@/components/AnimationWrapper';
 
 export const metadata = {
   title: 'Blog - Felipe Benini Web Developer',
@@ -18,11 +19,13 @@ const BlogPage = async ({ searchParams }: { searchParams: { page: string | undef
   const pageNum = searchParams.page || '1';
   const data = await fetchPosts(pageNum);
   return (
-    <main className={styles.blogPage}>
-      {data.posts.map((p: Post, index: React.Key) => {
-        return <PostComponent post={p} key={index} />
-      })}
-    </main>
+    <AnimationWrapper>
+      <main className={styles.blogPage}>
+        {data.posts.map((p: Post, index: React.Key) => {
+          return <PostComponent post={p} key={index} />
+        })}
+      </main>
+    </AnimationWrapper>
   )
 }
 

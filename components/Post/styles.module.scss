@@ -2,13 +2,19 @@
   max-width: calc(95% - 8px);
   width: 1080px;
   margin: 1rem auto;
-  height: 160px;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   background-color: #30313d40;
   padding: 8px 6px;
   border-radius: 6px;
+  transition: all ease 0.2s;
+  outline: 2px solid transparent;
+  &:hover {
+    background-color: #30313d64;
+    outline: 2px solid #30313ded;
+  }
   & span {
     justify-content: space-between;
     align-items: center;
@@ -41,6 +47,8 @@
     height: 100%;
     object-fit: cover;
     justify-self: start;
+    margin-top: auto;
+    margin-bottom: auto;
 
     & img {
       width: 100%;

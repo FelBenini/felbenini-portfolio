@@ -1,3 +1,4 @@
+import AnimationWrapper from '@/components/AnimationWrapper';
 import AboutSection from './HomeComponents/AboutSection'
 import HeroSection from './HomeComponents/HeroSection'
 import LatestPosts from './HomeComponents/LatestPosts';
@@ -19,11 +20,13 @@ async function loadPosts() {
 export default async function Home() {
   const posts = await loadPosts();
   return (
-    <main>
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <LatestPosts posts={posts} />
-    </main>
+    <AnimationWrapper>
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <LatestPosts posts={posts} />
+      </main>
+    </AnimationWrapper>
   )
 }

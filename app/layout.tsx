@@ -7,6 +7,7 @@ import LoadingBar from '@/components/LoadingBar'
 import SideMenu from '@/components/SideMenu'
 import { useState } from 'react';
 import { HiMenu } from 'react-icons/hi'
+import { AnimatePresence } from 'framer-motion';
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -25,25 +26,27 @@ export default function RootLayout({
     }
   }
   return (
-    <html lang="en">
-      <body className={montserrat.className}>
-        <LoadingBar />
-        <SideMenu openState={openState} setOpenState={setOpenState} />
-        <header>
-          <Link href='/'>
-            <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo'/>
-          </Link>
-          <span>
-            <Link href='/blog'>Blog</Link>
-            <Link href='/about'>About</Link>
-            <button>Download CV</button>
-          </span>
-          <button onClick={handleMenuClick} className='buttonMenu'>
-            <HiMenu size='3rem' />
-          </button>
-        </header>
+    <AnimatePresence>
+      <html lang="en">
+        <body className={montserrat.className}>
+          <LoadingBar />
+          <SideMenu openState={openState} setOpenState={setOpenState} />
+          <header>
+            <Link href='/'>
+              <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo' />
+            </Link>
+            <span>
+              <Link href='/blog'>Blog</Link>
+              <Link href='/about'>About</Link>
+              <button>Download CV</button>
+            </span>
+            <button onClick={handleMenuClick} className='buttonMenu'>
+              <HiMenu size='3rem' />
+            </button>
+          </header>
           {children}
-      </body>
-    </html>
+        </body>
+      </html>
+    </AnimatePresence>
   )
 }
