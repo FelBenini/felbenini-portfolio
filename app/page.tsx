@@ -26,7 +26,7 @@ export default async function Home() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
-        <h2 style={{textAlign: 'center', marginTop: '1.4rem', marginBottom: '1.4rem'}}>My Projects</h2>
+        <h2 style={{textAlign: 'center', marginTop: '6rem', marginBottom: '1.4rem'}}>My Projects</h2>
         <ProjectsScroll />
         <LatestPosts posts={posts} />
       </main>
