@@ -32,8 +32,8 @@ export default function RootLayout({
           <LoadingBar />
           <SideMenu openState={openState} setOpenState={setOpenState} />
           <header>
-            <Link href='/'>
-              <Image src='/logo.svg' width={47} height={42} alt='Felipe Benini Logo' />
+            <Link id="headerLogo" href='/'>
+              <Image src='/logo.svg' fill={true} alt='Felipe Benini Logo' />
             </Link>
             <span>
               <Link href='/blog'>Blog</Link>
