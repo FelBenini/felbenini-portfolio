@@ -31,5 +31,19 @@ export const list_of_projects: Array<Project> = [
     github: "https://github.com/FelBenini/todo-app",
     website: "https://todo-app-felbenini.vercel.app/",
     image: "/projectsImages/todo-app.png"
+  },
+  {
+    name: "coffeeBeans",
+    description: "A community blog made with React, Express, MongoDB and NodeJS with JWT authentication. Still an work in progress",
+    github: "https://github.com/FelBenini/coffeeBeans",
+    stack: "React, SASS, JavaScript, JWT, NodeJS, Express, MongoDB",
+    image: "/projectImages/coffee-beans.png"
+  },
+  {
+    name: "typeNotes",
+    description: "A social media app made with Next.JS, Express, MongoDB abd JWT authentication. Still an work in progress",
+    github: "https://github.com/FelBenini/type-notes",
+    stack: "React, SCSS, TypeScript, JWT, NodeJS, Express, MongoDB Compass",
+    image: "/projectImages/type-notes.png"
   }
 ]

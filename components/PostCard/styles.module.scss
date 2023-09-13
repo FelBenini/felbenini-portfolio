@@ -10,11 +10,13 @@
     justify-content: space-between;
     text-decoration: none;
     transition: all ease 0.2s;
+    text-wrap: balance;
     &:hover {
         background-color: #1f222b;
     }
     & h4 {
-        margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.35rem;
     }
     & .image {
         width: 100%;

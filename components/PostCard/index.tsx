@@ -14,11 +14,11 @@ export type Post = {
 
 const PostCard = ({post}: {post: Post}) => {
     const router = useRouter();
-    if (post.title.length > 52) {
-        post.title = post.title.slice(0, 52) + '...'
+    if (post.title.length > 60) {
+        post.title = post.title.slice(0, 60) + '...'
     }
-    if (post.summary.length > 125) {
-        post.summary = post.summary.slice(0, 125) + '...';
+    if (post.summary.length > 135) {
+        post.summary = post.summary.slice(0, 135) + '...';
     }
   return (
     <motion.a href={`/blog/${post.postUrl}`} className={styles.card}
