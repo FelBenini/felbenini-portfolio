@@ -39,11 +39,4 @@ export const list_of_projects: Array<Project> = [
     stack: "React, SASS, JavaScript, JWT, NodeJS, Express, MongoDB",
     image: "/projectImages/coffee-beans.png"
   },
-  {
-    name: "typeNotes",
-    description: "A social media app made with Next.JS, Express, MongoDB abd JWT authentication. Still an work in progress",
-    github: "https://github.com/FelBenini/type-notes",
-    stack: "React, SCSS, TypeScript, JWT, NodeJS, Express, MongoDB Compass",
-    image: "/projectImages/type-notes.png"
-  }
 ]

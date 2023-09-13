@@ -3,6 +3,7 @@ import AboutSection from './HomeComponents/AboutSection'
 import HeroSection from './HomeComponents/HeroSection'
 import LatestPosts from './HomeComponents/LatestPosts';
 import SkillsSection from './HomeComponents/SkillsSection'
+import ProjectsScroll from './HomeComponents/ProjectsScroll';
 
 export const revalidate = 10;
 
@@ -25,6 +26,8 @@ export default async function Home() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <h2 style={{textAlign: 'center', marginTop: '1.4rem', marginBottom: '1.4rem'}}>My Projects</h2>
+        <ProjectsScroll />
         <LatestPosts posts={posts} />
       </main>
     </AnimationWrapper>
