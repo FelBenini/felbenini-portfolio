@@ -1,9 +1,10 @@
 'use client';
 import Link from 'next/link';
 import { slide as Menu } from 'react-burger-menu'
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect } from 'react';
 import styles from './styles.module.scss'
 import Image from 'next/image';
+import { HiMenu } from 'react-icons/hi';
 
 function SideMenu({openState, setOpenState}: {openState: boolean, setOpenState: Dispatch<SetStateAction<boolean>>}) {
   useEffect(() => {
@@ -30,10 +31,16 @@ function SideMenu({openState, setOpenState}: {openState: boolean, setOpenState: 
       <div className={styles.sideMenu}>
         <span>
           <Image src='/logo.svg' alt='FB' width={42} height={42} />
+          <button onClick={() => setOpenState(false)} className='buttonMenu'>
+            <HiMenu size='3rem' />
+          </button>
         </span>
         <Link href='/about'>About</Link>
         <Link href='/blog'>Blog</Link>
         <Link href='/portfolio'>Portfolio</Link>
+        <button className={styles.cvButton}>
+          Download Curriculum
+        </button>
       </div>
     </Menu>
   )
