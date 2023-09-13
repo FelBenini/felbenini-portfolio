@@ -9,10 +9,10 @@ const ProjectsScroll = () => {
       <div className={styles.slider}>
         <div className={styles.content}>
           {list_of_projects.map((project) => {
-            return <ProjectCard name={project.name} img={project.image} github={project.github} description={project.description} demo={project.website} stack={project.stack.split(', ')}/>
+            return <ProjectCard key={project.name} name={project.name} img={project.image} github={project.github} description={project.description} demo={project.website} stack={project.stack.split(', ')}/>
           })}
           {list_of_projects.map((project) => {
-            return <ProjectCard name={project.name} img={project.image} github={project.github} description={project.description} demo={project.website} stack={project.stack.split(', ')}/>
+            return <ProjectCard key={project.name + '2'} name={project.name} img={project.image} github={project.github} description={project.description} demo={project.website} stack={project.stack.split(', ')}/>
           })}
         </div>
       </div>
