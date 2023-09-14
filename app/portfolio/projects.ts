@@ -33,10 +33,11 @@ export const list_of_projects: Array<Project> = [
     image: "/projectsImages/todo-app.png"
   },
   {
-    name: "coffeeBeans",
-    description: "A community blog made with React, Express, MongoDB and NodeJS with JWT authentication. Still an work in progress",
-    github: "https://github.com/FelBenini/coffeeBeans",
-    stack: "React, SASS, JavaScript, JWT, NodeJS, Express, MongoDB",
-    image: "/projectImages/coffee-beans.png"
-  },
+    name: "Next Weather",
+    description: "This is a web application for tracking the weather in various locations. The app is built with Next.js, Material UI, SCSS, Axios, WeatherAPI's API, React.js, and TypeScript.",
+    stack: "React, NextJS, Material UI, Weather API, TypeScript",
+    website: "https://weather-tracker-nextjs.vercel.app/",
+    github: "https://github.com/FelBenini/NextWeather",
+    image: "/projectsImages/next-weather.png"
+  }
 ]
