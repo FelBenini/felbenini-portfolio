@@ -104,12 +104,12 @@
     }
 
     & .bigTitle {
-        font-size: 3.815rem;
+        font-size: calc(3.215rem + 0.5vw);
         display: flex;
 
         & .animated {
             width: fit-content;
-            font-size: 3.815rem;
+            font-size: calc(3.215rem + 0.5vw);
             animation: slidein 300ms cubic-bezier(.76, .07, .41, 1.35) forwards;
             transform: scaleY(0%);
             animation-delay: calc(0.05s * var(--index));
