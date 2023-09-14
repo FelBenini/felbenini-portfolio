@@ -33,9 +33,6 @@
       left: 0%;
       transform: translateX(0);
       animation: scroll 30s linear infinite;
-      &:hover {
-        animation-play-state: paused;
-      }
     }
   }
 }

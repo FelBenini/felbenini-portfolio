@@ -3,6 +3,7 @@ import AgeTime from '../HomeComponents/AboutSection/AgeTime'
 import CloudTag from '../HomeComponents/AboutSection/TagCloud'
 import ProjectCard from '@/components/ProjectCard'
 import AnimationWrapper from '@/components/AnimationWrapper'
+import AnimatedLogo from '@/components/AnimatedLogo'
 
 export const metadata = {
   title: 'Felipe Benini Web Developer',
@@ -13,7 +14,7 @@ const About = () => {
   return (
     <AnimationWrapper>
       <main className={styles.aboutPage}>
-        <h1>About Me</h1>
+        <h1><AnimatedLogo scale={50} /> About Me</h1>
         <div>
           <p>Hey there! My name is <strong>Felipe</strong>, a full-stack web developer based on <strong>Brazil</strong>, and welcome to my little corner of the web! I am <AgeTime />. I have experience building projects and <strong>full-stack</strong> solutions with technologies such as JavaScript, TypeScript, Node.JS, PHP, SQL and much more! I am currently looking for my first <strong>professional oportunity</strong> on <strong>web development</strong> and the tech industry. Whether it&apos;s transforming wireframes into intuitive user interfaces or architecting robust backend systems, I take pride in every line of code I write. </p>
           <h2>Full Stack Web Dev</h2>
