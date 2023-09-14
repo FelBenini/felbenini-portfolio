@@ -1,6 +1,7 @@
 import { list_of_projects } from '@/app/portfolio/projects';
 import styles from './styles.module.scss';
 import ProjectCard from '@/components/ProjectCard';
+import Link from 'next/link';
 
 const ProjectsScroll = () => {
   return (
@@ -16,6 +17,9 @@ const ProjectsScroll = () => {
           })}
         </div>
       </div>
+      <Link href="/portfolio" className={styles.linkPortfolio}>
+        All Projects
+      </Link>
     </div>
   )
 }

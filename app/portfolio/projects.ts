@@ -34,7 +34,7 @@ export const list_of_projects: Array<Project> = [
   },
   {
     name: "Next Weather",
-    description: "This is a web application for tracking the weather in various locations. The app is built with Next.js, Material UI, SCSS, Axios, WeatherAPI's API, React.js, and TypeScript.",
+    description: "Wheater Tracker for various locations. Built with Next.js, Material UI, SCSS, WeatherAPI's API, React.js, and TypeScript.",
     stack: "React, NextJS, Material UI, Weather API, TypeScript",
     website: "https://weather-tracker-nextjs.vercel.app/",
     github: "https://github.com/FelBenini/NextWeather",

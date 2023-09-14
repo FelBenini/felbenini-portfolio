@@ -9,6 +9,22 @@
   flex-direction: column;
   text-align: center;
   padding-bottom: 100px;
+  & .linkPortfolio {
+    text-decoration: none;
+    border: 2px solid #27e5be;
+    color: #27e5be;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    display: block;
+    border-radius: 4px;
+    margin-top: 1.3rem;
+    transition: ease 0.2s all;
+    &:hover {
+      background-color: #27e5be;
+      color: #14151d;
+    }
+  }
   & .bg {
     background: linear-gradient(to left, #14151d, transparent, transparent, transparent, #14151d);
     width: 100%;
