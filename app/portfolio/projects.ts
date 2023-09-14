@@ -39,5 +39,13 @@ export const list_of_projects: Array<Project> = [
     website: "https://weather-tracker-nextjs.vercel.app/",
     github: "https://github.com/FelBenini/NextWeather",
     image: "/projectsImages/next-weather.png"
+  },
+  {
+    name: "This website",
+    description: "Portfolio website made with NextJS App Router, SCSS, Framer Motion for animations and tortaCMS for the backend of the blog!",
+    stack: "React, TypeScript, SCSS, NextJS, tortaCMS, Framer Motion",
+    website: "https://felbenini.vercel.app",
+    github: "https://github.com/FelBenini/felbenini-portfolio",
+    image: "/projectImages/portfolio-site.png"
   }
 ]
