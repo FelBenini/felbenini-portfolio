@@ -46,6 +46,6 @@ export const list_of_projects: Array<Project> = [
     stack: "React, TypeScript, SCSS, NextJS, tortaCMS, Framer Motion",
     website: "https://felbenini.vercel.app",
     github: "https://github.com/FelBenini/felbenini-portfolio",
-    image: "/projectImages/portfolio-site.png"
+    image: "/projectsImages/portfolio-site.png"
   }
 ]
