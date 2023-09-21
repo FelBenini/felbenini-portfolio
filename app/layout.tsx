@@ -38,7 +38,7 @@ export default function RootLayout({
             <span>
               <Link href='/blog'>Blog</Link>
               <Link href='/about'>About</Link>
-              <button>Download CV</button>
+              <a className='downloadButton' role='button' href='/Currículo.docx' download>Download CV</a>
             </span>
             <button onClick={handleMenuClick} className='buttonMenu'>
               <HiMenu size='3rem' />

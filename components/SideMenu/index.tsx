@@ -38,9 +38,9 @@ function SideMenu({openState, setOpenState}: {openState: boolean, setOpenState: 
         <Link href='/about'>About</Link>
         <Link href='/blog'>Blog</Link>
         <Link href='/portfolio'>Portfolio</Link>
-        <button className={styles.cvButton}>
+        <a className={styles.cvButton} href="/Currículo.docx" download>
           Download Curriculum
-        </button>
+        </a>
       </div>
     </Menu>
   )

@@ -14,10 +14,11 @@ export default function LoadingBar() {
         NProgress.configure({ showSpinner: false });
 
         const handleAnchorClick = (event: MouseEvent) => {
+            const isDownload = (event.currentTarget as HTMLAnchorElement).hasAttribute("download");
             const targetUrl = new URL((event.currentTarget as HTMLAnchorElement).href);
             const targetPage = (event.currentTarget as HTMLAnchorElement).target
             const currentUrl = new URL(location.href);
-            if (targetUrl !== currentUrl && targetUrl.hostname === currentUrl.hostname && targetUrl.pathname !== currentUrl.pathname && targetPage !== 'blank') {
+            if (targetUrl !== currentUrl && targetUrl.hostname === currentUrl.hostname && targetUrl.pathname !== currentUrl.pathname && targetPage !== 'blank' && !isDownload) {
               NProgress.start();
             }
           };

@@ -31,6 +31,11 @@
     border-radius: 6px;
     margin-top: auto;
     margin-bottom: 6dvh;
+    transition: all ease 0.2s;
+    &:hover {
+      background-color: #26ddb8;
+      color: rgb(21, 27, 28);
+    }
   }
   & span {
     display: flex;

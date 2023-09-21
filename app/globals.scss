@@ -116,7 +116,7 @@ header {
     display: flex;
     align-items: center;
 
-    & button {
+    & .downloadButton {
       margin-left: 1.8rem;
       background-color: transparent;
       padding: 0.5rem 0.8rem;
@@ -161,6 +161,7 @@ header {
 
       &:hover {
         color: #13141b;
+        text-decoration-color: transparent;
       }
 
       &:hover:before {
