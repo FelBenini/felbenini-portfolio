@@ -32,6 +32,16 @@
         margin-bottom: 2rem;
     }
 
+    & .infoPost {
+      display: flex;
+      height: fit-content;
+      align-items: center;
+      & h5 {
+        margin-right: 0.8rem;
+        margin-top: 0px !important;
+      }
+    }
+
     & .imageWrapper {
         margin-top: 1.2rem;
         margin-bottom: 1.2rem;

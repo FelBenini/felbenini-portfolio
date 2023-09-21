@@ -5,6 +5,7 @@ import styles from './styles.module.scss'
 import { notFound } from 'next/navigation'
 import { PostDate } from '@/components/Post';
 import AnimationWrapper from '@/components/AnimationWrapper';
+import { BiUser } from 'react-icons/bi';
 
 export const revalidate = 10;
 
@@ -39,7 +40,10 @@ export default async function BlogPost({ params }: { params: Params }) {
     <AnimationWrapper>
       <div className={styles.postSection}>
         <h1 className={styles.bigTitle}>{data.title}</h1>
-        <PostDate date={new Date(data.publishedAt)} />
+        <span className={styles.infoPost}>
+          <h5><BiUser size='1.3rem' style={{marginBottom: '-4px'}} /> Published by <b>{data.postedBy}</b></h5>         
+          <PostDate date={new Date(data.publishedAt)} />
+        </span>
         <div className={styles.imageWrapper}>
           <img src={data.backgroundImage} alt={data.title} loading='lazy' />
         </div>
