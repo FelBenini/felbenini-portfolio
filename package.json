@@ -11,6 +11,7 @@
   "dependencies": {
     "@frank-mayer/react-tag-cloud": "^1.2.1",
     "@mdx-js/loader": "^2.3.0",
+    "@next/env": "^13.5.2",
     "@next/mdx": "^13.4.12",
     "@types/mdx": "^2.0.5",
     "@types/node": "20.5.4",
