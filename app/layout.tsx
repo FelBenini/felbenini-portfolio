@@ -8,6 +8,7 @@ import SideMenu from '@/components/SideMenu'
 import { useState } from 'react';
 import { HiMenu } from 'react-icons/hi'
 import { AnimatePresence } from 'framer-motion';
+import Footer from '@/components/Footer';
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -45,6 +46,7 @@ export default function RootLayout({
             </button>
           </header>
           {children}
+          <Footer />
         </body>
       </html>
     </AnimatePresence>
