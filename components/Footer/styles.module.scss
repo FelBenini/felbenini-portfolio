@@ -1,7 +1,15 @@
 .footer {
   margin-top: 3.5rem;
-  padding: 2rem 8dvw;
-  width: 84dvw;
+  padding: 2rem 4.5dvw;
+  width: 91dvw;
   border-top: 1px solid #1d2027;
   background-color: #16181d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  & p {
+    text-align: right;
+    max-width: 60%;
+  }
 }
