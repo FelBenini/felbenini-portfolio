@@ -1,38 +1,27 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
-
-export function GET() {
-  return NextResponse.json({'message': 'this should be my mailer'});
-}
-
-const transport = nodemailer.createTransport({
-  port: 465,
-   host: "smtp.gmail.com",
-   auth: {
-     user: process.env.EMAIL_USERNAME,
-     pass: process.env.EMAIL_PASSWORD,
-  },
-  secure: true,
-})
+import { Resend } from 'resend';
 
 export async function POST(req: Request) {
   const {name, lastName, email, message} = await req.json();
-  const mailData = {
-    from: {
-        name: `${name} ${lastName}`,
-        address: "myEmail@gmail.com",
-    },
-    replyTo: email,
-    to: "felipe.benini.02@gmail.com",
-    subject: `felbenini app`,
-    text: message,
-    html: `${message}`,
-  };
-  try {
-    await transport.sendMail(mailData); 
-  } catch (error) {
-    console.log(error);
-    return NextResponse.json({}, {status: 400})
+
+  const regexp: RegExp = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
+
+  const emailIsValid = regexp.test(email);
+
+  if (!emailIsValid) {
+    return NextResponse.json({message: "E-mail is not valid"}, {status: 400})
   }
-  return NextResponse.json({});
+
+  const resend = new Resend(process.env.RESEND);
+
+  resend.emails.send({
+    from: 'onboarding@resend.dev',
+    to: 'felbenini@gmail.com',
+    subject: 'E-mail sent on portfolio website by ' + email,
+    html: `<h3>E-mail sent by ${name} ${lastName} with ${email}</h3>
+      <p>${message}</p>`
+  });
+
+  return new NextResponse;
 }
