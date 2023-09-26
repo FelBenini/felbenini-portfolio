@@ -1,5 +1,6 @@
 html {
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 /*16px*/
@@ -8,6 +9,17 @@ html {
   html {
     font-size: 90%;
   }
+}
+
+::placeholder {
+  color: #E7F2FB99;
+  opacity: 1;
+  font-weight: 600;
+}
+
+::-ms-input-placeholder {
+  color: #E7F2FB99;
+  font-weight: 600;
 }
 
 @media (max-width: 600) {
@@ -42,7 +54,7 @@ body {
   min-height: 100dvh;
   margin: 0px;
   color: #E7F2FB;
-  overflow-y: overlay;
+  scrollbar-gutter: stable both-edges;
 }
 
 a {
@@ -51,6 +63,7 @@ a {
 
 * {
   margin: 0px;
+  outline: 1px solid red;
 }
 
 .bm-burger-button {
@@ -65,6 +78,7 @@ a {
   ::-webkit-scrollbar {
     background-color: #12121a;
     width: 4px;
+    overflow-y: overlay;
     height: 4px;
   } 
 
