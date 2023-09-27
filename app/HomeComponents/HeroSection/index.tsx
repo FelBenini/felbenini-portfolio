@@ -29,10 +29,10 @@ export default function HeroSection() {
                     <Link aria-label='GitHub' href='https://github.com/FelBenini' target='blank'>
                         <BsGithub size='2.2rem' />
                     </Link>
-                    <Link aria-label='LinkedIn' href='https://www.linkedin.com/in/felipe-benini-88a23b24a/' target='blank'>
+                    <Link aria-label='LinkedIn' href='https://www.linkedin.com/in/felipe-benini-589169293/' target='blank'>
                         <BiLogoLinkedinSquare size='2.6rem' />
                     </Link>
-                    <Link aria-label='e-mail' href='mailto:felipe.benini.02@gmail.com' target='blank'>
+                    <Link aria-label='e-mail' href='mailto:felbenini@gmail.com' target='blank'>
                         <MdEmail size='2.6rem' />
                     </Link>
                 </span>
