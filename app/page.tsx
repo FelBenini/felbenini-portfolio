@@ -30,6 +30,7 @@ export default async function Home() {
         <h2 style={{textAlign: 'center', marginTop: '6rem', marginBottom: '1.4rem'}}>My Projects</h2>
         <ProjectsScroll />
         <LatestPosts posts={posts} />
+        <h2 style={{textAlign: 'center', marginTop: '6rem', marginBottom: '1.4rem'}} >Get in Touch!</h2>
         <ContactForm />
       </main>
     </AnimationWrapper>

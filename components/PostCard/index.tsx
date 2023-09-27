@@ -1,4 +1,5 @@
 "use client";
+import { once } from 'events';
 import styles from './styles.module.scss';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
@@ -24,6 +25,7 @@ const PostCard = ({post}: {post: Post}) => {
     <motion.a href={`/blog/${post.postUrl}`} className={styles.card}
       initial={{opacity: 0, translateY: '40px'}}
       whileInView={{opacity: 1, translateY: '0px'}}
+      viewport={{once: true}}
       transition={{delay: 0.3, ease: 'easeInOut', duration: 0.4}}
       onClick={(e) => {
         e.preventDefault();

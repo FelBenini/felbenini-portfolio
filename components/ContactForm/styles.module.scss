@@ -1,8 +1,12 @@
 .contactForm {
-  width: 1100px;
+  width: 1300px;
   max-width: 95dvw;
   margin: 2rem auto;
   color: #E7F2FB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   & form {
     width: 570px;
     max-width: calc(95dvw - 1.8rem);
@@ -14,6 +18,7 @@
     padding-right: 1.1rem;
     border: 1px solid #1d2027;
     border-radius: 6px;
+    margin: 1.3rem auto;
     & h2 {
       width: 100%;
       text-align: left;
@@ -105,5 +110,13 @@
         background-color: #02ada8;
       }
     }
+  }
+
+  & .illustration {
+    width: 30rem;
+    max-width: 95dvw;
+    margin: 1.6rem auto;
+    aspect-ratio: 1/1;
+    position: relative;
   }
 }

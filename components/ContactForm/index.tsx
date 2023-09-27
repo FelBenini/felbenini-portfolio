@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import { MdEmail } from 'react-icons/md';
 import { useState } from 'react';
 import { BiSolidPaperPlane } from 'react-icons/bi';
+import Image from 'next/image';
 
 const ContactForm = () => {
   const [emailInfo, setEmailInfo] = useState({
@@ -57,6 +58,9 @@ const ContactForm = () => {
             <BiSolidPaperPlane /> { !loading ? 'Send' : 'Sending...' }
           </button>
       </form>
+      <div className={styles.illustration} >
+        <Image src='/mail-box.svg' alt='Illustration of two persons sending an e-mail' fill />
+      </div>
     </section>
   )
 }
