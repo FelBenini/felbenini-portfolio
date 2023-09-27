@@ -3,6 +3,7 @@
     line-height: 1.75;
     width: 780px;
     max-width: 95%;
+    min-height: calc(100dvh - 8.5rem);
     margin: 0 auto;
 
     & pre {

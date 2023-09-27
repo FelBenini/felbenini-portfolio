@@ -94,6 +94,13 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & svg {
+        margin-bottom: -2px;
+        margin-right: 4px;
+      }
       &:hover {
         background-color: #02ada8;
       }
