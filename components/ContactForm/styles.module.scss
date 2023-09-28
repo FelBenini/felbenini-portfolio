@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #16181d;
+    background-color: #1f222b;
     padding: 0.6rem;
     padding-bottom: 0.2rem;
     padding-right: 1.1rem;
@@ -101,20 +101,22 @@
       margin: 0.6rem auto;
       font-size: 1.2rem;
       font-weight: 600;
-      color: #E7F2FB;
-      background-color: #009994;
-      border: none;
+      color: #36DDC3;
+      background-color: transparent;
+      border: 2px solid #36DDC3;
       border-radius: 6px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: ease 0.2s all;
       & svg {
         margin-bottom: -2px;
         margin-right: 4px;
       }
       &:hover {
-        background-color: #02ada8;
+        background-color: #36DDC3;
+        color: #1f222b;
       }
     }
     & div {
@@ -144,5 +146,16 @@
     aspect-ratio: 1/1;
     position: relative;
     background: radial-gradient(#27e5be39 10%, transparent 50%);
+  }
+}
+
+@media(max-width: 1117px) {
+  .contactForm {
+    & form {
+      h2, p {
+        text-align: center;
+        justify-content: center;
+      }
+    }
   }
 }
