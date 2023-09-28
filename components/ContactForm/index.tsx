@@ -4,7 +4,7 @@ import { MdEmail } from 'react-icons/md';
 import { useState } from 'react';
 import { BiSolidPaperPlane } from 'react-icons/bi';
 import Image from 'next/image';
-import { setServers } from 'dns';
+import { BsTelephoneFill, BsLinkedin } from 'react-icons/bs';
 
 const ContactForm = () => {
   const [emailInfo, setEmailInfo] = useState({
@@ -54,11 +54,16 @@ const ContactForm = () => {
           <input type="text" placeholder='First name*' required onChange={(e) => handleChange(e.target.value, "firstName") } value={emailInfo.firstName} /> 
           <input type="text" placeholder='Last name*' required onChange={(e) => handleChange(e.target.value, "lastName")} value={emailInfo.lastName}  />
         </span>
-          <input type="email" placeholder='Your e-mail*' required onChange={(e) => handleChange(e.target.value, "email")} value={emailInfo.email} />
-          <textarea style={{width: "98%", height: '230px'}} required onChange={(e) => handleChange(e.target.value, "message")} value={emailInfo.message} name="message" placeholder='Your message*' />
-          <button type="submit">
-            <BiSolidPaperPlane /> { !loading ? success ? 'Sent!' : 'Send' : 'Sending...' }
-          </button>
+        <input type="email" placeholder='Your e-mail*' required onChange={(e) => handleChange(e.target.value, "email")} value={emailInfo.email} />
+        <textarea style={{width: "98%", height: '230px'}} required onChange={(e) => handleChange(e.target.value, "message")} value={emailInfo.message} name="message" placeholder='Your message*' />
+        <button type="submit">
+          <BiSolidPaperPlane /> { !loading ? success ? 'Sent!' : 'Send' : 'Sending...' }
+        </button>
+        <h5>or use one of these methods</h5>
+        <div>
+          <p><BsTelephoneFill /> +55 (11) 9400-8451</p>
+          <a href='https://www.linkedin.com/in/felipe-benini-589169293/' target='blank'><BsLinkedin /> LinkedIn</a>
+        </div>
       </form>
       <div className={styles.illustration} >
         <Image src='/mail-box.svg' alt='Illustration of two persons sending an e-mail' fill />

@@ -15,10 +15,17 @@
     align-items: center;
     background-color: #16181d;
     padding: 0.6rem;
+    padding-bottom: 0.2rem;
     padding-right: 1.1rem;
     border: 1px solid #1d2027;
     border-radius: 6px;
     margin: 1.3rem auto;
+    & h5 {
+      font-weight: 400;
+      opacity: 0.9;
+      margin-top: 0.6rem;
+      margin-bottom: 1rem;
+    }
     & h2 {
       width: 100%;
       text-align: left;
@@ -110,6 +117,24 @@
         background-color: #02ada8;
       }
     }
+    & div {
+      display: flex;
+      margin-top: 0.8rem;
+      justify-content: space-around;
+      width: 100%;
+      & p, a {
+        width: fit-content;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0.3rem;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        & svg {
+          margin-right: 4px;
+        }
+      }
+    }
   }
 
   & .illustration {
@@ -118,5 +143,6 @@
     margin: 1.6rem auto;
     aspect-ratio: 1/1;
     position: relative;
+    background: radial-gradient(#27e5be39 10%, transparent 50%);
   }
 }
