@@ -22,9 +22,9 @@ const About = () => {
             <CloudTag />
           </div>
           <p>My knowledge on web development goes from building beautiful and intuitive user interfaces on the front-end to complex and scalable services on the back-end. Some of the technologies that I&apos;ve worked with are JavaScript, TypeScript, Node.js, React, Next.js, Vue, Nuxt.js, SQL, NoSQL, Java, C#, ASP.NET, Express.js, Nest.js and much more. Check out below some of my contributions on GitHub in the latest days as well as some of my programming projects!</p>
-          <h3>GitHub Contributions</h3>
+          <h2>GitHub Contributions</h2>
           <img src="https://ghchart.rshah.org/FelBenini" alt="Felbenini's Github chart" style={{ filter: 'invert(95%) hue-rotate(220deg)', margin: '2rem auto', display: 'block', width: '95%' }} />
-          <h3>Projects That I&apos;ve Built</h3>
+          <h2>Projects That I&apos;ve Built</h2>
           <section className={styles.projects}>
             <ProjectCard name='tortaCMS' stack={['Node.js', 'TypeScript', 'React', 'Next.js', 'Full Stack', 'PrismaORM', 'SASS']} github='https://github.com/FelBenini/torta-cms' demo='https://torta-cms.vercel.app' description='tortaCMS is an open-source project designed to give developers flexible tools with a powerful content management solution' img='/projectsImages/torta-cms.png' />
             <ProjectCard name='cryptoTracker' stack={['Node.js', 'JavaScript', 'React', 'SASS', 'Material UI', 'Coingecko API']} github='https://github.com/FelBenini/crypto_tracker' demo='https://crypto-tracker-fb.vercel.app/' description='A crypto currency tracker that displays data of hundred of cryptos built with React, React-router, Material-UI and Coingecko&apos;s API' img='/projectsImages/crypto-tracker.png' />
