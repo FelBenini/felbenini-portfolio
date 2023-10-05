@@ -1,13 +1,13 @@
 import styles from './styles.module.scss'
 import Card from '@/components/3dCard'
 import { FaReact } from 'react-icons/fa'
-import { SiNextdotjs, SiNuxtdotjs, SiSass, SiTypescript, SiMongodb, SiPhp, SiNestjs, SiExpress, SiGithubactions, SiDocker } from 'react-icons/si'
-import { BiLogoVuejs, BiLogoCss3, BiLogoPostgresql } from 'react-icons/bi'
+import { SiNextdotjs, SiNuxtdotjs, SiSass, SiTypescript, SiMongodb, SiNestjs, SiGithubactions, SiDocker, SiSpring } from 'react-icons/si'
+import { BiLogoVuejs, BiLogoCss3 } from 'react-icons/bi'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { IoLogoNodejs, IoLogoJavascript } from 'react-icons/io'
-import { GrMysql } from 'react-icons/gr'
 import { BsFiletypeSql, BsGithub, BsGit } from 'react-icons/bs'
 import { MdDataObject } from 'react-icons/md'
+import { GrJava } from 'react-icons/gr';
 import { Miriam_Libre } from 'next/font/google'
 import { Montserrat } from 'next/font/google'
 
@@ -34,17 +34,15 @@ export default function SkillsSection() {
                     </div>
                 </Card>
                 <Card id='backend-skills'>
-                    <div className={styles.cardContent}>
-                        <h4 className={montserrat.className} style={{color: '#4592fb'}}>Backend</h4>
-                        <p><IoLogoNodejs /> Node.js</p>
-                        <p><SiExpress /> Express.js</p>
-                        <p><SiNestjs /> Nest.js</p>
-                        <p><BsFiletypeSql /> SQL</p>
-                        <p><GrMysql /> MySQL</p>
-                        <p><BiLogoPostgresql />PostgreSQL</p>
-                        <p><SiMongodb /> MongoDB</p>
-                        <p><SiPhp />PHP</p>
-                    </div>
+                  <div className={styles.cardContent}>
+                    <h4 className={montserrat.className} style={{color: '#4592fb'}}>Backend</h4>
+                    <p><IoLogoNodejs /> Node.js</p>
+                    <p><SiNestjs /> Nest.js</p>
+                    <p><BsFiletypeSql /> SQL</p>
+                    <p><SiMongodb /> MongoDB</p>
+                    <p><GrJava style={{filter: "invert(1)"}} scale={1.2}/> Java</p>
+                    <p><SiSpring /> Spring</p>
+                  </div>
                 </Card>
                 <Card id='development-skills'>
                     <div className={styles.cardContent}>

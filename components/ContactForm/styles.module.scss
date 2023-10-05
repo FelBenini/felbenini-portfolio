@@ -25,6 +25,9 @@
       opacity: 0.9;
       margin-top: 0.6rem;
       margin-bottom: 1rem;
+      margin-left: 1.5%;
+      width: 101.5%;
+      text-align: center;
     }
     & h2 {
       width: 100%;
@@ -123,7 +126,7 @@
       display: flex;
       margin-top: 0.8rem;
       justify-content: space-around;
-      width: 100%;
+      width: 101.5%;
       & p, a {
         width: fit-content;
         font-size: 1.2rem;
