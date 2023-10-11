@@ -7,12 +7,14 @@
     margin: 0 auto;
 
     & pre {
-        overflow-y: scroll;
-        padding: 6px;
-        margin: 0 1rem;
-        background-color: #121219;
-        margin-bottom: 1.5rem;
-        border-radius: 6px;
+      overflow-y: scroll;
+      padding: 0.4rem;
+      margin-top: 1rem;
+      background-color: #121219;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      outline: 0.4rem solid #121219;
     }
 
     & .summary {
