@@ -109,9 +109,15 @@ header {
   background-color: #0b0b0d62;
   backdrop-filter: blur(10px);
   z-index: 99;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1100px;
+    max-width: 100%;
+  }
 
   & #headerLogo {
     position: relative;

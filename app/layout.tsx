@@ -33,17 +33,19 @@ export default function RootLayout({
           <LoadingBar />
           <SideMenu openState={openState} setOpenState={setOpenState} />
           <header>
-            <Link id="headerLogo" href='/'>
-              <Image src='/logo.svg' fill={true} alt='Felipe Benini Logo' />
-            </Link>
-            <span>
-              <Link href='/blog'>Blog</Link>
-              <Link href='/about'>About</Link>
-              <a className='downloadButton' role='button' href='/Currículo.docx' download>Download CV</a>
-            </span>
-            <button onClick={handleMenuClick} className='buttonMenu'>
-              <HiMenu size='3rem' />
-            </button>
+            <nav>
+              <Link id="headerLogo" href='/'>
+                <Image src='/logo.svg' fill={true} alt='Felipe Benini Logo' />
+              </Link>
+              <span>
+                <Link href='/blog'>Blog</Link>
+                <Link href='/about'>About</Link>
+                <a className='downloadButton' role='button' href='/Currículo.docx' download>Download CV</a>
+              </span>
+              <button onClick={handleMenuClick} className='buttonMenu'>
+                <HiMenu size='3rem' />
+              </button>
+            </nav>
           </header>
           {children}
           <Footer />
