@@ -21,3 +21,14 @@
     font-size: 1.2rem;
   } 
 }
+
+.bigBg {
+  display: flex;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to top, #13131c, transparent, transparent), url(/bg-img-projects.svg);
+  width: 100vw;
+  height: fit-content;
+  padding-bottom: 3.5rem;
+}

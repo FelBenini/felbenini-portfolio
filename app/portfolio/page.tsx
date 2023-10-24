@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 const PortfolioPage = async () => {
   return (
+    <div className={style.bigBg}>
       <main className={style.portfolioPage}>
         <h1>Portfolio</h1>
         <p>Some projects that I&apos;ve built to showcase my skills and proficiency on web development.</p>
@@ -16,6 +17,7 @@ const PortfolioPage = async () => {
           return <ProjectCard key={project.name} name={project.name} description={project.description} github={project.github} demo={project.website} stack={project.stack.split(', ')} img={project.image}/>
         })}
       </main>
+    </div>
   )
 }
 
