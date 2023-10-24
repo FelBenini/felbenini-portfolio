@@ -18,7 +18,7 @@ export const list_of_projects: Array<Project> = [
   },
   {
     name: "cryptoTracker",
-    description: "A crypto currency tracker that displays data of hundred of cryptos built with React, React-router, Material-UI and Coingecko's API",
+    description: "A crypto currency tracker that displays data of crypto currencies built with React, React-router, Material-UI and Coingecko's API",
     stack: "Node.js, JavaScript, React, SASS, Material UI, Coingecko API",
     github: "https://github.com/FelBenini/crypto_tracker",
     website: "https://crypto-tracker-fb.vercel.app/",
