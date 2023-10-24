@@ -1,153 +1,161 @@
 .heroSection {
-    height: 100dvh;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    radial-gradient(at 97% 1%, #29f7b631 0px, transparent 50%),
+    radial-gradient(at 52% 0%, #a232f73e 0px, transparent 50%),
+    radial-gradient(at 0% 0%, #f4457742 0px, transparent 50%);
+
+  & h5 {
+    font-weight: 400;
+    font-size: 1.2rem;
     display: flex;
-    justify-content: center;
+    color: #e7f2fbc2;
     align-items: center;
-    background-image:
-        radial-gradient(at 97% 1%, #29f7b631 0px, transparent 50%),
-        radial-gradient(at 52% 0%, #a232f73e 0px, transparent 50%),
-        radial-gradient(at 0% 0%, #f4457742 0px, transparent 50%);
+    opacity: 0;
+    animation: opacity 0.4s ease forwards;
+    animation-delay: 2s;
 
-    & h5 {
-        font-weight: 400;
-        font-size: 1.2rem;
+    & svg {
+      animation: arrowAnimation 1.2s ease infinite;
+      margin: 0.5rem;
+    }
+  }
+
+  & .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
+    width: 420px;
+    max-width: 100vw;
+
+    & .icons {
+      animation: opacity 0.4s ease forwards;
+      opacity: 0;
+      animation-delay: 1.3s;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+
+      & a {
+        transition: all ease 350ms;
+        width: 3rem;
+        height: 3rem;
+        aspect-ratio: 1/1;
+        filter: saturate(1);
         display: flex;
-        color: #e7f2fbc2;
+        justify-content: center;
         align-items: center;
-        opacity: 0;
+        border-radius: 100%;
+
+        &:hover {
+          filter: saturate(20);
+          background: rgba(223, 232, 229, 0.2);
+        }
+      }
+    }
+
+    & h3 {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+      -webkit-font-smoothing: antialiased;
+      animation: opacity 0.4s ease forwards;
+      opacity: 0;
+      animation-delay: 0.8s;
+    }
+
+    & .span {
+      display: flex;
+      width: 90%;
+      height: 52px;
+      font-size: 20px;
+      justify-content: space-around;
+      align-items: center;
+
+      & a {
+        height: 100%;
+        width: calc(50% - 2px);
+        transition: all ease 0.2s;
+        font-size: 20px;
+        border: none;
         animation: opacity 0.4s ease forwards;
-        animation-delay: 2s;
-
-        & svg {
-            animation: arrowAnimation 1.2s ease infinite;
-            margin: 0.5rem;
-        }
-    }
-
-    & .div {
+        opacity: 0;
+        animation-delay: 1.1s;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        height: 320px;
-        width: 420px;
-        max-width: 100vw;
+        text-decoration: none;
+        color: #111112;
 
-        & .icons {
-            animation: opacity 0.4s ease forwards;
-            opacity: 0;
-            animation-delay: 1.3s;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 80%;
-
-            & a {
-                transition: all ease 350ms;
-                filter: saturate(1);
-
-                &:hover {
-                    filter: saturate(20);
-                }
-            }
+        &:hover {
+          filter: brightness(1.4);
         }
 
-        & h3 {
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke: 1px;
-            -webkit-font-smoothing: antialiased;
-            animation: opacity 0.4s ease forwards;
-            opacity: 0;
-            animation-delay: 0.8s;
+        &:nth-child(1) {
+          border-radius: 6px 2px 2px 6px;
+          background: linear-gradient(180deg, #36DDC3 0%, #1D9F91 100%);
+          cursor: pointer;
         }
 
-        & .span {
-            display: flex;
-            width: 90%;
-            height: 52px;
-            font-size: 20px;
-            justify-content: space-around;
-            align-items: center;
-
-            & a {
-                height: 100%;
-                width: calc(50% - 2px);
-                transition: all ease 0.2s;
-                font-size: 20px;
-                border: none;
-                animation: opacity 0.4s ease forwards;
-                opacity: 0;
-                animation-delay: 1.1s;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
-                color: #111112;
-
-                &:hover {
-                    filter: brightness(1.4);
-                }
-
-                &:nth-child(1) {
-                    border-radius: 6px 2px 2px 6px;
-                    background: linear-gradient(180deg, #36DDC3 0%, #1D9F91 100%);
-                    cursor: pointer;
-                }
-
-                &:nth-child(2) {
-                    border-radius: 2px 6px 6px 2px;
-                    background: linear-gradient(180deg, #FF487E 0%, #C83663 100%);
-                    cursor: pointer;
-                }
-            }
+        &:nth-child(2) {
+          border-radius: 2px 6px 6px 2px;
+          background: linear-gradient(180deg, #FF487E 0%, #C83663 100%);
+          cursor: pointer;
         }
+      }
     }
+  }
 
-    & .bigTitle {
-        font-size: calc(3.215rem + 0.5vw);
-        display: flex;
+  & .bigTitle {
+    font-size: calc(3.215rem + 0.5vw);
+    display: flex;
 
-        & .animated {
-            width: fit-content;
-            font-size: calc(3.215rem + 0.5vw);
-            animation: slidein 300ms cubic-bezier(.76, .07, .41, 1.35) forwards;
-            transform: scaleY(0%);
-            animation-delay: calc(0.05s * var(--index));
-            height: fit-content;
-        }
+    & .animated {
+      width: fit-content;
+      font-size: calc(3.215rem + 0.5vw);
+      animation: slidein 300ms cubic-bezier(.76, .07, .41, 1.35) forwards;
+      transform: scaleY(0%);
+      animation-delay: calc(0.05s * var(--index));
+      height: fit-content;
     }
+  }
 }
 
 @keyframes slidein {
-    from {
-        transform: scaleY(0%);
-    }
+  from {
+    transform: scaleY(0%);
+  }
 
-    to {
-        transform: scaleY(100%);
-    }
+  to {
+    transform: scaleY(100%);
+  }
 }
 
 @keyframes opacity {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes arrowAnimation {
-    0% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
 
-    50% {
-        transform: translateY(4px);
-    }
+  50% {
+    transform: translateY(4px);
+  }
 
-    0% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
 }
