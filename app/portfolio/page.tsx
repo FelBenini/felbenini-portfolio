@@ -3,8 +3,6 @@ import { list_of_projects } from "./projects";
 import style from './styles.module.scss';
 import { Metadata } from "next";
 
-export const revalidate = 10;
-
 export const metadata: Metadata = {
   title: 'Portfolio - Felipe Benini'
 }

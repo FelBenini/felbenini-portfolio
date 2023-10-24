@@ -6,8 +6,6 @@ import SkillsSection from './HomeComponents/SkillsSection'
 import ProjectsScroll from './HomeComponents/ProjectsScroll';
 import ContactForm from '@/components/ContactForm';
 
-export const revalidate = 10;
-
 export const metadata = {
   title: 'Felipe Benini Web Developer',
   description: 'Full-Stack Web Developer based on Brazil with proficiency on many technologies',

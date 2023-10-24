@@ -48,4 +48,4 @@ export const list_of_projects: Array<Project> = [
     github: "https://github.com/FelBenini/felbenini-portfolio",
     image: "/projectsImages/portfolio-site.png"
   }
-]
+] as const;
