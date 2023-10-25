@@ -109,6 +109,7 @@ header {
   background-color: #0b0b0d62;
   backdrop-filter: blur(10px);
   z-index: 99;
+  outline: 1px solid #c7d3db1f;
 
   & nav {
     display: flex;
